@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <title>Main Page</title>
+</head>
+
+<body>
+    <div class="Header">
+        <div class="HeadBar">
+            <div class="Headcontainer Dash">
+                <div class="Headbutton Dash" onclick= "loadGallery('curated')"  >                   
+                    <p id="Dashbutton"> DASH </p>                  
+                </div>    
+            </div> 
+            
+            <div class="Headcontainer Categories" >
+                <div class="Headbutton Categories" onclick="loadCategories()" >                   
+                        <p id="Categorybutton"> CATEGORIES </p>
+                </div>    
+            </div>
+
+        </div>
+    </div>
+
+<div class="Main">
+    
+    
+    <div class="Gallery" id="Gallery">
+        
+        <template id="GalleryElement" class=" ">
+            <div class="gallery-container" id="gallery-container">    
+                <div class="gallery-item">
+                    <div class="image">
+                        <a href="">
+                            <img src="/static/Images/Test.png" id="img" alt="/static/Images/Test.png">
+                        </a>
+                    </div>
+                    <div class="ImageInfo">
+                        <a href=""> Test </a>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="CategoryElement" class=" ">
+            <div class="gallery-container" id="gallery-container">    
+                <div class="gallery-item">
+                    <div class="image">                        
+                            <img src="/static/Images/Test.png" id="img" alt="/static/Images/Test.png">                       
+                    </div>
+                    <div class="ImageInfo">
+                        <a> Test </a>
+                    </div>
+                </div>
+            </div>
+        </template>
+    
+    </div>
+    
+
+</div>
+
+    <div class="Footer">
+        <a href="http://www.pexels.com">
+            Images provided by Pexels
+        </a>
+    </div>
+
+
+
+    <script src="/static/JS/GalleryManager.js" onload=""></script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+{
+  "amount": 8,
+  "photos": [
+    {
+      "Category": "Animals",
+      "src": {
+        "medium": "/static/Images/Categories/Animals/Medium.png",
+        "portrait": "/static/Images/Categories/Animals/Portrait.png",
+        "landscape": "/static/Images/Categories/Animals/Landscape.png"
+      }
+    },
+    {
+      "Category": "Space",
+      "src": {
+        "medium": "/static/Images/Categories/Space/Medium.png",
+        "portrait": "/static/Images/Categories/Space/Portrait.png",
+        "landscape": "/static/Images/Categories/Space/Landscape.png"
+      }
+    },
+    {
+      "Category": "Nature",
+      "src": {
+        "medium": "/static/Images/Categories/Nature/Medium.png",
+        "portrait": "/static/Images/Categories/Nature/Portrait.png",
+        "landscape": "/static/Images/Categories/Nature/Landscape.png"
+      }
+    },
+    {
+      "Category": "People",
+      "src": {
+        "medium": "/static/Images/Categories/People/Medium.png",
+        "portrait": "/static/Images/Categories/People/Portrait.png",
+        "landscape": "/static/Images/Categories/People/Landscape.png"
+      }
+    },
+    {
+      "Category": "Ocean",
+      "src": {
+        "medium": "/static/Images/Categories/Ocean/Medium.png",
+        "portrait": "/static/Images/Categories/Ocean/Portrait.png",
+        "landscape": "/static/Images/Categories/Ocean/Landscape.png"
+      }
+    },
+    {
+      "Category": "Technology",
+      "src": {
+        "medium": "/static/Images/Categories/Technology/Medium.png",
+        "portrait": "/static/Images/Categories/Technology/Portrait.png",
+        "landscape": "/static/Images/Categories/Technology/Landscape.png"
+      }
+    },
+    {
+      "Category": "Food",
+      "src": {
+        "medium": "/static/Images/Categories/Food/Medium.png",
+        "portrait": "/static/Images/Categories/Food/Portrait.png",
+        "landscape": "/static/Images/Categories/Food/Landscape.png"
+      }
+    },
+    {
+      "Category": "Eggs",
+      "src": {
+        "medium": "/static/Images/Categories/Eggs/Medium.png",
+        "portrait": "/static/Images/Categories/Eggs/Portrait.png",
+        "landscape": "/static/Images/Categories/Eggs/Landscape.png"
+      }
+    }
+  ]
+}

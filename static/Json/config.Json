@@ -1,0 +1,9 @@
+{
+    "Host": "192.168.5.141", 
+    "Port": 80 ,
+    "LogLevel": "info",
+    "ImageListUrl": "https://api.pexels.com/v1/",
+    "PerPage": 20,
+    "ApiKey": ""
+    
+}
