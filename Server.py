@@ -35,6 +35,7 @@ with open(infoPath) as infoFile:
     
     ApiKey = info["ApiKey"]
     KeyHeader = {"Authorization": ApiKey}
+    mainPath = info["mainHtmlPath"]
 
     
 
@@ -47,7 +48,7 @@ RESTapi.mount("/static", StaticFiles(directory=staticPath),name="static")
 
 @RESTapi.get("/",response_class=HTMLResponse)
 def getIndex():
-    file = open("Gallery-Server/static/html/Main.html","rb")
+    file = open("./static/html/Main.html","rb")
     return file.read()
 
 @RESTapi.get("/GetImages/{type}")
