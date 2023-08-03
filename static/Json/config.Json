@@ -4,6 +4,7 @@
     "LogLevel": "info",
     "ImageListUrl": "https://api.pexels.com/v1/",
     "PerPage": 20,
-    "ApiKey": ""
+    "ApiKey": "",
+    "staticfolder" : "Gallery-Server/static"
     
 }

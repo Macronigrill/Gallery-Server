@@ -34,10 +34,12 @@ function loadGallery(type,search = null) {
       }
       else {
         console.error(`Network response was not ok: ${response.status}`);
+        fallback();     
       }
     })
     .then((data) => {
       console.log(data);
+      if(!data) {fallback()};
       Instantiate(data);
     })
     .catch((error) => {
@@ -181,4 +183,10 @@ function deleteGallery() {
   for(i = 0; i < GalleryInstances.length; i++) {
     GalleryInstances[i].remove();
   }
+}
+
+function fallback() {
+  fetch("/static/Json/FallbackList.json")
+  .then(response => {return response.json()})
+  .then(data => {Instantiate(data)});
 }

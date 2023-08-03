@@ -20,7 +20,7 @@ import os
 #Import uvicorn to handle server
 import uvicorn
 
-infoPath = Path("./static/Json/config.Json")
+infoPath = Path("C:/Users/Dokto/Desktop/Coding-Stuff/GalleryBlogFastapi/Gallery-Server/static/Json/config.json")
 
 with open(infoPath) as infoFile:
     info = json.load(infoFile)
@@ -31,6 +31,7 @@ with open(infoPath) as infoFile:
     
     ImageListUrl = info["ImageListUrl"]
     ImagesPerPage = info["PerPage"]
+    staticPath = info["staticfolder"]
     
     ApiKey = info["ApiKey"]
     KeyHeader = {"Authorization": ApiKey}
@@ -42,11 +43,11 @@ with open(infoPath) as infoFile:
 #Creating the API for  the server to run
 RESTapi = FastAPI()
 
-RESTapi.mount("/static", StaticFiles(directory="./static"),name="static")
+RESTapi.mount("/static", StaticFiles(directory=staticPath),name="static")
 
 @RESTapi.get("/",response_class=HTMLResponse)
 def getIndex():
-    file = open("./static/html/Main.html","rb")
+    file = open("Gallery-Server/static/html/Main.html","rb")
     return file.read()
 
 @RESTapi.get("/GetImages/{type}")
