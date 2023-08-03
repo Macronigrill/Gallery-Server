@@ -20,7 +20,7 @@ import os
 #Import uvicorn to handle server
 import uvicorn
 
-infoPath = Path("Gallery-Server/static/Json/config.json")
+infoPath = Path("./static/Json/config.json")
 
 with open(infoPath) as infoFile:
     info = json.load(infoFile)

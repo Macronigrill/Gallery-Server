@@ -5,6 +5,6 @@
     "ImageListUrl": "https://api.pexels.com/v1/",
     "PerPage": 20,
     "ApiKey": "",
-    "staticfolder" : "Gallery-Server/static"
+    "staticfolder" : "./static"
     
 }

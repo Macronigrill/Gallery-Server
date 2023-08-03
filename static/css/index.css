@@ -184,7 +184,8 @@ body {
 .Footer a {
     text-decoration: none;
     font-family: sans-serif;
-    color: black;
+    color: #fff;
+    display: block;
 }
 
 
